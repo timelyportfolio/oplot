@@ -1,0 +1,36 @@
+Package: oplot
+Type: Package
+Title: 'Observable Plot' 'Htmlwidget'
+Version: 0.1.0
+Date: 2024-01-24
+Authors@R: c(
+    person(
+      "Observable", "Inc."
+      , role = c("aut", "cph")
+      , comment = "Observable plot JavaScript library, see https://github.com/observablehq/plot/graphs/contributors"
+    ),
+    person(
+      "Kent", "Russell"
+      , role = c("aut", "cre")
+      , comment = "R interface"
+      , email = "kent.russell@timelyportfolio.com"
+    )
+  )
+Maintainer: Kent Russell <kent.russell@timelyportfolio.com>
+URL: https://github.com/timelyportfolio/oplot
+BugReports: https://github.com/timelyportfolio/oplot/issues
+Description: Make interactive 'Observable plot' visualizations in R with the
+    convenience and infrastructure of an 'htmlwidget'.
+License: MIT + file LICENSE
+LazyData: TRUE
+Imports:
+    htmlwidgets,
+    htmltools
+Suggests: 
+    jsonlite,
+    knitr,
+    markdown,
+    testthat,
+    rmarkdown
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
